@@ -14,8 +14,8 @@ func main()  {
 	flag.StringVar(&tweet,"tweet", "", "The tweet to be sent")
 	flag.StringVar(&consumerKey, "consumer_key", os.Getenv("GOWEET_CONSUMER_KEY"), "consumer key for your twitter app")
 	flag.StringVar(&consumerSecret, "consumer_secret", os.Getenv("GOWEET_CONSUMER_SECRET"), "consumer secret for your twitter app")
-	flag.StringVar(&accessToken, "access_token", os.Getenv("GOWEET_ACCESS_TOKEN"), "consumer key for your twitter app")
-	flag.StringVar(&accessTokenSecret, "access_token_secret", os.Getenv("GOWEET_ACCESS_TOKEN_SECRET"), "consumer key for your twitter app")
+	flag.StringVar(&accessToken, "access_token", os.Getenv("GOWEET_ACCESS_TOKEN"), "access token for your twitter app")
+	flag.StringVar(&accessTokenSecret, "access_token_secret", os.Getenv("GOWEET_ACCESS_TOKEN_SECRET"), "access token secret for your twitter app")
 
 	flag.Parse()
 
